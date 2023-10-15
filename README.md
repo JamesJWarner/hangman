@@ -7,4 +7,6 @@ The milestone python files are steps in creating the game.
 
 milestone_2: basic setup of random word from list and a letter guess.
 
-milestone_3: more advanced version of milestone 2 with functions. 
+milestone_3: more advanced version of milestone 2 with functions.
+
+milestone_4: Created a Hangman class with added functionality of updating the word-guessed variable and also displaying number of lives. 
