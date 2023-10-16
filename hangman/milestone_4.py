@@ -67,6 +67,7 @@ class Hangman:
                 self.list_of_guesses.append(guess)
                 self.check_guess(guess)
 
+
 # Test
 # word_list = ["apple", "banana", "cherry", "pineapple", "grape"]
 # test = Hangman(word_list)
