@@ -10,3 +10,6 @@ milestone_2: basic setup of random word from list and a letter guess.
 milestone_3: more advanced version of milestone 2 with functions.
 
 milestone_4: Created a Hangman class with added functionality of updating the word-guessed variable and also displaying number of lives. 
+
+milestone_5: Defined a function called play-game which would use the class created in milestone-4.
+It also has the added functionality of telling the user if they win or lose
