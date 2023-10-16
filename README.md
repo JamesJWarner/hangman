@@ -4,7 +4,7 @@ Hangman is a classic game in which a player thinks of a word and the other playe
 This is an implementation of the Hangman game, where the user enters a list of words for the computer to choose from at random. Then the user guesses letters and tries to find which word the computer has chosen.
 
 ## How to play
-Open the milestone_5.py file, replace the words in the [] next to where it says word_list (make sure each word is seperated by a comma i.e [word1, word2, ..., final word] ).
+Open the milestone_5.py file, located in the hangman folder, replace the words in the [] next to where it says word_list (make sure each word is seperated by a comma i.e [word1, word2, ..., final word] ).
 
 Save the file so that the words you wish to play with are updated. Once you have done this, these steps do not need to be repeated unless you wish to change the word choices for the computer again.
 
