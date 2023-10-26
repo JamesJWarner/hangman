@@ -57,7 +57,7 @@ class Hangman:
         guess = input("Guess a single letter: ")
         if guess.isalpha() == False or len(guess) != 1: # checks if input is not only letters or if it is longer than one character
             print("Invalid letter. Please, enter a single alphabetical character.")
-        elif guess in self.list_of_guesses:
+        elif guess.lower() in self.list_of_guesses:
             print("You already tried that letter!")
         else:
             guess = guess.lower() # turns guess into lower case so for example a and A are treated as the same guess
@@ -83,9 +83,7 @@ def play_game(word_list):
         '''
         while True:
             repeat_option = input("Do you want to play again? yes or no: ")
-            if repeat_option.isalpha() == False:
-                print("Invalid answer. Make sure to avoid any non alphabetical characters!")
-            elif repeat_option.lower() != "yes" and repeat_option.lower() != "no":
+            if repeat_option.lower() != "yes" and repeat_option.lower() != "no":
                 print("Invalid answer. Please give yes or no answer only!")
             else:
                 break
@@ -118,12 +116,11 @@ def play_game(word_list):
                 break
         return num_wins, num_losses
     
-    played_game = run_game(word_list, 0, 0) # This runs the first game, hence 0 wins, 0 losses
-    num_wins = played_game[0]
-    num_losses = played_game[1]
-    repeat_option = repeat_game_option() # Need this to trigger while loop
+    num_wins = 0
+    num_losses = 0
+    repeat_option = "yes" # Need this to trigger while loop
     while repeat_option == "yes":
-        new_played_game = run_game(word_list, num_wins, num_losses) # This runs future games, hence variable args instead of 0's
+        new_played_game = run_game(word_list, num_wins, num_losses) # This runs a round of the game
         num_wins = new_played_game[0]
         num_losses = new_played_game[1]
         repeat_option = repeat_game_option() # Need this to end while loop
